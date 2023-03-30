@@ -213,12 +213,14 @@ section.opening div.button-container button{
 @media only screen and (max-width:1200px){
     section.side-bar{
         display: none;
+       
     }
     .ham{
         display: block;
         position: fixed;
         top: 15px;
         right: 15px;
+        z-index: 999;
          
        } 
 
@@ -236,6 +238,7 @@ section.opening div.button-container button{
         width: 100%;
         background-color:var(--bg-alternative);
         display: none;
+        z-index: 99;
 
     }
     ul.nav.active{

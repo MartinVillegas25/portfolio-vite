@@ -198,3 +198,22 @@ menu.addEventListener('click', () => {
     spanBottom.classList.toggle('rotate-bottom');
     
 })
+
+// traducir la pagina 
+
+
+
+const translate = document.querySelector('#switch');
+
+translate.addEventListener('click', () => {
+
+    let id = translate.checked
+
+    console.log(id);
+    if(id){
+        location.href="../indexSpanish.html"
+    } else{
+        location.href="../index.html"
+    }
+
+})
