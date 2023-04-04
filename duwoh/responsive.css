@@ -8,6 +8,12 @@
         
     
     }
+    div.switch-container {
+        display: flex;
+        position: initial;
+        z-index: 90;
+        margin-top:21px;
+    }
 }
 
 /*martin opening rever*/

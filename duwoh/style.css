@@ -17,7 +17,7 @@ html{
 
 /*variables*/
 :root{
-  --font-size-titles: 120px;
+  --font-size-titles: 90px;
   --font-size-subtitles: 43px;
   --font-size-h3:32px;
   --font-size-description:18px;
@@ -166,7 +166,9 @@ section.opening{
   min-height: 550px;
   height: 100vh;  
   position: relative;
-
+  background-image: url(./assets/imagenes/header2.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .arrow-up{
@@ -202,7 +204,8 @@ section.opening{
 
 .subtitle{
   color:#fff;
-  font-size: 26px;
+  font-size: var(--font-size-h3);
+  margin-bottom: 32px;
   
 }
 
@@ -263,7 +266,7 @@ h1.focus-in-contract {
 }
 
 
-section.opening div.button-container button{
+section.opening div.button-container a{
   min-width: 271px;
   padding:21px 22px;
   margin-left:20px;
@@ -394,6 +397,9 @@ section.side-bar:hover .nav-item-container img{
   filter: invert(0);
  
 }
+section.side-bar:hover li.items-side{
+  width: 260px;
+}
 
 .nav-side{
   list-style: none;
@@ -406,7 +412,7 @@ section.side-bar:hover .nav-item-container img{
 li.items-side{
   height: 20%;
   width: 65px;
-  transition: width 1s ease;
+  transition: width 1.3s ease-in-out;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -473,11 +479,9 @@ div.nav-item-container img{
 
 
 /*button styles*/
-a.light{
-  color:#fff
-}
-button.light{
- 
+
+a.light , button.light{
+  display: inline-block;
   border:2px solid #fff;
   color:#fff;
   background-color: transparent;
@@ -486,18 +490,22 @@ button.light{
   font-weight: 700;
   margin-top:21px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 
-button.light:hover{
+
+a.light:hover, button.light:hover{
   background-color: #fff;
   color: #33FFBB;
 }
-button.light:hover a{
+a.light:hover a{
   
   color: #33FFBB;
 }
-button.dark{
+a.dark{
+  text-decoration: none;
+  display: inline-block;
   border:2px solid #33FFBB;
   color:#33FFBB;
   background-color: transparent;
@@ -508,7 +516,7 @@ button.dark{
   margin-top:21px;
   cursor: pointer;
 }
-button.dark:hover{
+a.dark:hover{
   background-color: #33FFBB;
   color: #fff;
 }
